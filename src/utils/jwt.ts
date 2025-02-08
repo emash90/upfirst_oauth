@@ -4,7 +4,7 @@ const secret = new TextEncoder().encode(process.env.JWT_SECRET)
 
 //generate auth code
 
-export const generateAuthCode = () => {
+export const generateAuthCode = (): string => {
     return Math.random().toString(36).substring(2, 15)
 }
 
