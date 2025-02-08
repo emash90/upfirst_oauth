@@ -1,4 +1,8 @@
 import { SignJWT } from "jose";
+import dotenv from "dotenv";
+
+// Ensure environment variables are loaded before anything else
+dotenv.config();
 
 const secret = new TextEncoder().encode(process.env.JWT_SECRET)
 
